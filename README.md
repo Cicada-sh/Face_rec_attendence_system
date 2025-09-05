@@ -36,22 +36,24 @@ The application will start on `http://localhost:5000`
 
 ### Training Mode
 1. Open the application in your browser
-2. Go to the "Training Mode" tab
-3. Enter your name
-4. Click "Start Camera" to activate your webcam
-5. Position your face in the frame
-6. Click "Capture & Train" to train the system on your face
-7. Repeat this process with different angles/lighting for better accuracy
+2. Go to the "TeacherLogin" tab
+3. Enter admin as password and user
+4. Go to the Face recognition Training area 
+5. Entre the student's name
+6. Click "Start Camera" to activate your webcam
+7. Position your face in the frame
+8. Click "Capture & Train" to train the system on your face
+   
 
 ### Attendance Mode
-1. Switch to the "Attendance Mode" tab
+1. Switch to the "Attendance" tab
 2. Click "Start Camera" to activate your webcam
 3. Position your face in the frame
 4. Click "Mark Attendance" to record your attendance
 5. The system will recognize your face and mark you present
 
 ### Dashboard
-1. Click "View Dashboard" to see attendance statistics
+1. Click "TeacherLogin" to see attendance statistics
 2. View all registered students
 3. Check attendance logs with timestamps
 4. Monitor daily attendance counts
@@ -70,13 +72,12 @@ Face_rec_hackathon/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This file
-├── static/               # Static files (CSS, JS)
 ├── templates/            # HTML templates
 │   ├── index.html        # Main interface
 │   └── dashboard.html    # Dashboard interface
-├── uploads/              # Uploaded images (if any)
 ├── models/               # Trained face recognition models
 └── attendance.db         # SQLite database (created automatically)
+
 ```
 
 ## API Endpoints
@@ -108,7 +109,7 @@ Face_rec_hackathon/
 ## Demo Workflow
 
 1. **Setup**: Run the application and open in browser
-2. **Training**: Use "Training Mode" to register your face
+2. **Training**: Use "FaceRecognitionTraining" to register your face
 3. **Testing**: Switch to "Attendance Mode" and test recognition
 4. **Monitoring**: Check the dashboard to see attendance records
 5. **Live Demo**: Show real-time face detection and attendance marking
@@ -119,3 +120,4 @@ Face_rec_hackathon/
 - All data is stored locally in SQLite database
 - The face recognition model is saved in the `models/` directory
 - The system is designed to be simple and educational, perfect for demonstrations
+
